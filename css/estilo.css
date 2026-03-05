@@ -48,5 +48,28 @@ nav li{
 }
 .titulo_quem_somos{
     clear: left;
+    /*text-align: center;*/
+}
+/*Estilização da sessão Nosso estabelecimento*/
+.titulos{
     text-align: center;
+}
+.mapa{
+    text-align: center;
+    background: linear-gradient(#FFFFFF,rgb(236, 210, 210));
+}
+.nossosprodutos{
+      width: 61%;
+      margin-left: 20%;
+}
+.img_nossos_produtos{
+    width: 13%;
+    border-radius: 5px;
+}
+.divnossosprodutos{
+    display:flex ;
+    justify-content: space-around;
+}
+.lista{
+    margin-top:  60px;
 }
