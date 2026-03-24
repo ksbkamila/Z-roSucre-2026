@@ -1,0 +1,103 @@
+/*Estilização Padrão*/
+body{
+    background: linear-gradient(#FFFFFF,rgb(231, 190, 190));
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*Estilização do Header da página*/
+header{
+    background-color: rgb(236, 210, 210);
+    padding: 15px 0 15px 0;
+}
+.logo{
+    width: 9% ;
+    padding-left: 22px;
+}
+nav{
+    color: rgb(179, 23, 23);
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    font-size: 22;
+}
+nav li{ 
+    display: inline;
+    margin-right: 45px;
+
+}
+.divHeader{
+    position: relative;
+}
+.banner{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+/**/
+.quem_somos{
+      width: 61%;
+      margin-left: 20%;
+      text-align: justify;
+      font-size: 17px;
+      
+}
+.img_quem_somos{
+    width: 15%;
+    float: left;
+    margin-right: 15px;
+}
+.titulo_quem_somos{
+    clear: left;
+    /*text-align: center;*/
+}
+/*Estilização da sessão Nosso estabelecimento*/
+.titulos{
+    text-align: center;
+}
+.mapa{
+    text-align: center;
+    
+}
+.nossosprodutos{
+      width: 61%;
+      margin-left: 20%;
+      
+}
+.img_nossos_produtos{
+    width: 13%;
+    border-radius: 5px;
+}
+.divnossosprodutos{
+    display:flex ;
+    justify-content: space-around;
+}
+.lista{
+    margin-top:  60px;
+}
+.video{
+    padding-top: 6%;
+    text-align: center;
+    
+}
+footer{
+    padding: 30px 10px 10px 0;
+    background: url("../img/fundo_rodape.png");
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(88, 88, 88, 0.562);
+    background-blend-mode: darken; 
+}
+footer p{
+    color: white;
+    text-align: right;
+    font-size: 20px;
+}
+footer a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.logo_footer{
+    width: 12%;
+    padding-left: 85%;
+}
