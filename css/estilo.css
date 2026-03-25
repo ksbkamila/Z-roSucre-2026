@@ -1,5 +1,6 @@
 /*Estilização Padrão*/
 body{
+    background: linear-gradient(#FFFFFF,rgb(231, 190, 190));
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -56,11 +57,12 @@ nav li{
 }
 .mapa{
     text-align: center;
-    background: linear-gradient(#FFFFFF,rgb(236, 210, 210));
+    
 }
 .nossosprodutos{
       width: 61%;
       margin-left: 20%;
+      
 }
 .img_nossos_produtos{
     width: 13%;
@@ -76,5 +78,26 @@ nav li{
 .video{
     padding-top: 6%;
     text-align: center;
-    background: linear-gradient(#FFFFFF,rgb(236, 210, 210));
+    
+}
+footer{
+    padding: 30px 10px 10px 0;
+    background: url("../img/fundo_rodape.png");
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(88, 88, 88, 0.562);
+    background-blend-mode: darken; 
+}
+footer p{
+    color: white;
+    text-align: right;
+    font-size: 20px;
+}
+footer a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.logo_footer{
+    width: 12%;
+    padding-left: 85%;
 }
