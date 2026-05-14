@@ -1,6 +1,6 @@
 /*Estilização Padrão*/
 body{
-    background: linear-gradient(#FFFFFF,rgb(231, 190, 190));
+    
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -24,6 +24,10 @@ nav li{
     display: inline;
     margin-right: 45px;
 
+}
+nav li a{
+    color:rgb(179, 23, 23) ;
+    text-decoration: none;
 }
 .divHeader{
     position: relative;
@@ -60,23 +64,35 @@ nav li{
     
 }
 .nossosprodutos{
-      width: 61%;
-      margin-left: 20%;
+      padding: 2%;
       
+}
+.divnossosprodutos{
+    width: 70%;
+    margin-left: 30%;
 }
 .img_nossos_produtos{
     width: 13%;
     border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px #0000;
+    opacity: 1;
+    transition: 400ms;
 }
-.divnossosprodutos{
-    display:flex ;
-    justify-content: space-around;
-}
+
 .lista{
-    margin-top:  60px;
+     width: 30%;
+    display: inline-block;
+    vertical-align: "top";
+    list-style: none;
+}
+.lista li{
+    line-height: 2;
+}
+.lista_nossosprodutos li:before{
+   content: ""
 }
 .video{
-    padding-top: 6%;
+    padding-bottom: 30px;
     text-align: center;
     
 }

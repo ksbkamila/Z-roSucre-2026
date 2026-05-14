@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/contato.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="icon" href="img/cupcake_10368513.png" type="image/x-con">
+        <title>Ac Zero </title>
+    </head>
+    <body>
+        <header>
+            <div class="divHeader">
+                <img src="img/img.k.png" class="logo"/>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../telas/produtos.html"</li>
+                        <li>Contato</li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+        <main>
+            <ul class="contatos-titulos">
+                <li class="contato-item">Contatos</li>
+            </ul>
+            <div id="formRetorno" class="divRetorno">
+                <p id="textoRetorno" class="texto-contato"></p>
+            </div>
+            <div id="formulario">
+                <p class="texto-contato">
+                    Será uma alegria te atender!
+                    <br><br>
+                    Você pode nos encontrar no Instagram, no WhatsApp ou preencher o formulário abaixo.
+                </p>
+                <form id="frmContato">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label>*Nome e Sobrenome</label>
+                        <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
+
+                        <label>E-mail</label>
+                        <input type="email" id="email" name="" class="input-padrao" placeholder="seuemail@dominio.com">
+
+                        <label>Telefone</label>
+                        <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+
+                        <label>* Mensagem</label>
+                        <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                        <label>Como prefere o nosso contato?
+                            <input type="radio" value="radio-mail" name="Contato"> E-mail
+                            <input type="radio" value="radio-telefone" name="Contato"> Telefone
+                            <input type="radio" value="radio-whatsapp" name="Contato"> WhatsApp
+                        </label>
+
+                        <br>
+                        <label>Qual o motivo do seu contato?
+                            <select>
+                                <option>Selecione</option>
+                                <option>Dúvida</option>
+                                <option>Sugestão</option>
+                                <option>Elogio</option>
+                                <option>Reclamação</option>
+                            </select>
+                        </label>
+                        <br>
+                    </fieldset>
+
+                    <label><input type="checkbox" class="chk">Gostaria de receber as nossas novidades por E-mail?</label>
+
+                    <input type="submit" id="enviar" value="Enviar formulário" class="enviar">
+                </form>
+            </div>    
+        </main>
+
+
+
+
+        <footer>
+                <img src="../img/img.k.png" class="logo_footer">
+                <p>
+                    Encomendas on-line: 
+                    <a href="" target="_blank">
+                        <i class="fa fa-whatsapp"></i> (11) 99999-9999
+                    </a> | 
+                    <a href="" target="_blank">
+                        <i class="fa fa-instagram"></i> @zeroAc
+                    </a>
+                </p>
+        </footer> 
+        <script src="../js/form.js"></script>
+    </body>
+
+
+
+</html>

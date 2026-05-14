@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/estilo.css"/>
+        <link rel="stylesheet" href="../css/estilo_produto.css">
+        <link rel="icon" href="img/cupcake_10368513.png" type="image/x-con">
+        <title>Ac Zero </title>
+        <script>
+            alert("Conheça nossos produtos!");
+            function abrirDetalhes(nome, imagem, descricao){
+                url=`pop_produto.html?nomeProduto=${encodeURIComponent(nome)}&imgProduto=${encodeURIComponent(imagem)}&descProduto=${encodeURIComponent(descricao)}`;
+                window.open(url, "_blank", "width=800, height=700")
+
+            }
+        </script>
+    </head>
+    
+    <body>
+         <header>
+          <div class="divHeader">
+            <img src="../img/img.k.png" class="logo"/>
+            <!--Barra de Navegação-->
+            <nav>
+                <!--Lista de Itens no Menu-->
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li>Produtos</li>
+                    <li>Contato</li>
+                </ul>
+            </nav>
+          </div>
+        </header>
+        <main>
+            <ul class="produto-titulo">
+                <li>Produtos</li>
+            </ul>
+            <!--Exibe a Data-->
+            <p class="data">
+                <script type="text/JavaScript">
+                    dia = new Array("Domingo", "Segunda-feira","Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado");
+                    mes = new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro")
+
+
+                    data = new Date
+                    document.write(dia[data.getDay()] +", "+ data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear());
+                </script>
+            
+            </p>
+            <!--Exibição de produto-->
+            <div class="container">
+                <script>
+                /*Descrição Produto*/
+                    desc_produto="O bolo de chocolate com calda de cereja é uma sobremesa clássica e sofisticada, muitas vezes associada à Floresta Negra, que combina massa de cacau fofinha, recheio cremoso (nata ou ganache), cerejas em calda e raspas de chocolate. "
+                    slider = ["../img/pexels-matvalina2-20638164.jpg", "../img/pexels-matvalina-20638165 (1).jpg"];
+                </script>
+                <div class="card" onclick="abrirDetalhes('Fatia de Bolo,', slider, desc_produto)">
+                    <img src="../img/produtos/pexels-matvalina-20638165.jpg">
+                    <h2>Bolo</h2>
+                    <p>Bolo de Chocolate Com Calda de Cereja</p>
+                    <p class="preco">R$25,00 a FATIA.</p>
+                </div>
+                
+                   <script>
+                /*Descrição Produto*/
+                    desc_produto="O bolo de chocolate estilo Matilda combina uma massa densa e úmida com ganache cremosa, resultando em uma sobremesa clássica e intensamente chocolatuda.
+                    slider = ["../img/produtos/pexels-marceloverfe-18874692.jpg", "../img/pexels-nano-erdozain-120534369-29538420.jpg" ];
+                </script>
+                <div class="card"  onclick="abrirDetalhes('Fatia de Bolo,', slider, desc_produto)">
+                    <img src="../img/produtos/pexels-marceloverfe-18874692.jpg">
+                    <h2>Bolo</h2>
+                    <p>Bolo Matilda</p>
+                    <p class="preco">R$25,00 a FATIA.</p>
+                </div>
+
+                <div class="card">
+                    <img src="../img/produtos/pexels-yasinaydin-12426038.jpg">
+                    <h2>Bolo</h2>
+                    <p>Bolo de Morango com Banana</p>
+                    <p class="preco">R$25,00 a FATIA.</p>
+                </div>
+                
+                <div class="card">
+                    <img src="../img/produtos/pexels-jasmin-kaemmerer-704618493-36899617.jpg">
+                    <h2>Bolo</h2>
+                    <p>Bolo Rafaello</p>
+                    <p class="preco">R$25,00 a FATIA.</p>
+                </div>
+
+                  <div class="card">
+                    <img src="../img/produtos/pexels-helloaesthe-8616795.jpg">
+                    <h2>Bolo</h2>
+                    <p>Bolo de Chocolate com Nozes</p>
+                    <p class="preco">R$25,00 a FATIA.</p>
+                </div>
+
+                <div class="card">
+                    <img src="../img/produtos/pexels-yulia-oliinychenko-849416506-19651066.jpg">
+                    <h2>Bolo</h2>
+                    <p>Bolo de Leite Ninho</p>
+                    <p class="preco">R$25,00 a FATIA.</p>
+                </div>
+
+
+            </div>
+
+        </main>
+
+
+        <footer>
+                <img src="../img/img.k.png" class="logo_footer">
+                <p>
+                    Encomendas on-line: 
+                    <a href="" target="_blank">
+                        <i class="fa fa-whatsapp"></i> (11) 99999-9999
+                    </a> | 
+                    <a href="" target="_blank">
+                        <i class="fa fa-instagram"></i> @zeroAc
+                    </a>
+                </p>
+        </footer> 
+    </body>
+
+
+
+
+
+</html>

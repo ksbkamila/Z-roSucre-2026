@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Ac Zero </title>
+        <link rel="stylesheet" href="../css/estilo_produto.css">
+        
+    </head>
+    <body>
+        <main >
+            <div class="pop">
+                <h1 id="nome-produto"></h1> 
+                <div class="slider">
+                    <button id = "prevBnt">&#10094;</button>
+                    <img id="slider-img" src=""/>
+                    <button id="nextBnt">&#10094;</button>
+                </div>
+                <p id="desc-produto" ></p>
+
+
+                <!--Captura as informações do parametro-->
+                <script>
+                    //Função para capturar os parametros da POP
+                    function getParametro(infoCaptura){
+                        urlParametro= new URLSearchParams(window.location.search);
+
+                        return urlParametro.get(infoCaptura)
+                    }
+
+                    //Preenche as informações no layout 
+                    document.getElementById("nome-produto").textContent = getParametro("nomeProduto");
+                    //document.getElementById ("img-produto").src= getParametro("imgProduto");
+                    document.getElementById ("desc-produto").textContent =  getParametro("descProduto");
+
+                    //CODIGO DO SLIDER
+                    const imagens =getParametro("imgProduto")
+                                         ? getParametro("imgProduto").split(',')
+                                         :[];
+                    
+                    console.log(imagens);
+
+                    let index=0;
+                    //GUARDA O ELEMENTO HTML DO SLIDER
+                    const sliderImg=document.getElementById("slider-img");
+
+                    function MostrarImagens(){
+                        if(imagens.length > 0){
+                            sliderImg.src=imagens[index];
+                        }
+                    }
+
+                    document.getElementById("prevBnt").onclick = function(){
+                        index = (index-1 + imagens.length) % imagens.length;
+                        MostrarImagens();
+                    }
+
+                    document.getElementById("nextBnt").onclick = function(){
+                        index = (index + 1) % imagens.length;
+                        MostrarImagens();
+                    }
+                    MostrarImagens();
+                </script>
+            </div>
+        </main>
+    </body>
+
+
+
+
+</html>

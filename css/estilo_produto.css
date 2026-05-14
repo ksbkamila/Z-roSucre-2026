@@ -1,0 +1,84 @@
+/*titulo*/
+.produto-titulo{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(179, 23, 23);
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+}
+.produto-titulo li:before{
+    content: "🍰";
+}
+/*Gradiente do fundo*/
+.main{
+    background: linear-gradient(white,rgb(156, 65, 118));
+}
+/*Containr dos cards*/
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+/*estilização do card*/
+.card{
+    background-color: white ;
+    width: 280px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease-in-out;
+    margin-left: 9%;
+    margin-bottom: 2%;
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.preco{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(31, 136, 101);
+}
+.data{
+    text-align: right;
+    margin-right: 20px;
+    font-size: 16px;
+}
+.pop{
+    margin: 0;
+}
+.pop img {
+    width: 600;
+    height: 450;
+    border-radius: 10px;
+}
+.pop h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(179, 23, 23);;
+}
+.slider{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+.slider button{
+    background-color: rgb(179, 23, 23);;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+}
